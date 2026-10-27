@@ -1,0 +1,16 @@
+[
+  "qemu-system-arm",
+  "-M",
+  "mps2-an386",
+  "-cpu",
+  "cortex-m4",
+  "-nographic",
+  "-monitor",
+  "none",
+  "-serial",
+  "stdio",
+  "-kernel",
+  "/mnt/d/111ProjectP/\u5927\u521b2026/openharmony-parameter-tuning/build/OHOS_Image",
+  "-icount",
+  "shift=0,align=off,sleep=off"
+]

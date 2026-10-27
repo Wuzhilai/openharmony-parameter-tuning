@@ -1,0 +1,5 @@
+# Preserve archived source and evidence bytes on Windows and Linux.
+* -text
+*.gz binary
+*.pkl binary
+OHOS_Image binary

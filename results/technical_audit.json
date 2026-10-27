@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "measurement_count": true,
+    "study_image": true,
+    "protocol_hash": true,
+    "deployment_image": true,
+    "deployment_sources_match": true,
+    "study_sources_match": true,
+    "heldout_test_count": true,
+    "all_test_cells": true,
+    "equal_search_budget": true,
+    "disjoint_training_test_seeds": true,
+    "memory_integrity": true,
+    "finite_scores": true,
+    "cross_language_cases": true,
+    "actual_kernel_closed_loops": true,
+    "feature_ablations": true,
+    "boundary_rejection_and_restart": true,
+    "raw_transcript_present": true,
+    "all_records_in_raw_transcript": true
+  },
+  "passed": true,
+  "scope": "Technical evidence audit; formal school signatures and physical hardware validation are outside this package."
+}

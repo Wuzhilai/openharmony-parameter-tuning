@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "compiler": "arm-none-eabi-gcc (15:10.3-2021.07-4) 10.3.1 20210621 (release)",
+  "rebuilt_image_sha256": "d8b24b4e0a7520a2556cd2e57b52920595f2741aa6d279e2f891aed55e295a0b",
+  "boot_log": "evidence/boot_smoke.log",
+  "scope": "Recompiled public sources and observed MID_BOOT_OK plus successful allocation; no byte-identical ELF claim."
+}

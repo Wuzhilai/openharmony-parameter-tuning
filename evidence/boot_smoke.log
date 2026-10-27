@@ -1,0 +1,10 @@
+MID_BOOT OpenHarmony LiteOS-M QEMU mps2-an386
+entering kernel init...
+MID_INIT ret=0
+MID_TASK_CREATE ret=0
+Entering scheduler
+MID_SMOKE task_started tick=0
+MID_SMOKE allocation=ok
+MID_BOOT_OK actual_liteos_m=1 tick=2
+MID_READY protocol=1 clock_hz=25000000
+qemu-system-arm: terminating on signal 15 from pid 11 (python3)

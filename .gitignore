@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+build/
+audit/rerun/
+evidence/*.serial.log
+evidence/*_console.log
+.venv/
+*.vhdx
+downloads/
+*.docx
+*.pptx
+*.pdf
+~$*

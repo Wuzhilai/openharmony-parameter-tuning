@@ -1,0 +1,165 @@
+ root {
+    device_info {
+        match_attr = "hdf_manager";
+        template host {
+            hostName = "";
+            priority = 100;
+            template device{
+                template deviceNode {
+                    policy = 0;
+                    priority = 100;
+                    preload = 0;
+                    permission = 0664;
+                    moduleName = "";
+                    serviceName = "";
+                    deviceMatchAttr = "";
+                }
+            }
+        }
+        platform :: host {
+            hostName = "platform_host";
+            priority = 50;
+            device_uart :: device {
+                device0 :: deviceNode {
+                    policy = 1;
+                    priority = 40;
+                    permission = 0644;
+                    moduleName = "HDF_PLATFORM_UART";
+                    serviceName = "HDF_PLATFORM_UART_0";
+                    deviceMatchAttr = "qemu_virt_uart_0";
+                }
+            }
+            device_sdio :: device {
+                device0 :: deviceNode {
+                    policy = 1;
+                    priority = 70;
+                    permission = 0644;
+                    moduleName = "HDF_PLATFORM_SDIO";
+                    serviceName = "HDF_PLATFORM_MMC_2";
+                    deviceMatchAttr = "fake_sdio_0";
+                }
+            }
+            device_gpio :: device {
+                device0 :: deviceNode {
+                    policy = 2;
+                    priority = 80;
+                    permission = 0644;
+                    moduleName = "HDF_PLATFORM_GPIO_MANAGER";
+                    serviceName = "HDF_PLATFORM_GPIO_MANAGER";
+                }
+            }
+        }
+        display :: host {
+            hostName = "display_host";
+            device_hdf_disp :: device {
+                device0 :: deviceNode {
+                    policy = 2;
+                    priority = 200;
+                    permission = 0660;
+                    moduleName = "HDF_DISP";
+                    serviceName = "hdf_disp";
+                }
+            }
+            virtio_gpu :: device {
+                device0 :: deviceNode {
+                    policy = 0;
+                    priority = 100;
+                    preload = 0;
+                    permission = 0660;
+                    moduleName = "HDF_VIRTIO_GPU";
+                    serviceName = "hdf_virtio_gpu";
+                    deviceMatchAttr = "";
+                }
+            }
+        }
+        network :: host {
+            hostName = "network_host";
+            priority = 90;
+            device_wifi :: device {
+                device0 :: deviceNode {
+                    policy = 2;
+                    priority = 100;
+                    preload = 0;
+                    permission = 0664;
+                    moduleName = "HDF_WIFI";
+                    serviceName = "hdfwifi";
+                    deviceMatchAttr = "hdf_wlan_driver";
+                }
+            }
+            device_wlan_chips :: device {
+                device0 :: deviceNode {
+                    policy = 0;
+                    priority = 110;
+                    preload = 1;
+                    moduleName = "HDF_FAKE_WIFI";
+                    serviceName = "hdffakewifi";
+                    deviceMatchAttr = "virtnet_fakewifi";
+                }
+            }
+        }
+        storage :: host {
+            hostName = "storage_host";
+            device_mmc:: device {
+                device0 :: deviceNode {
+                    policy = 1;
+                    priority = 50;
+                    permission = 0600;
+                    moduleName = "HDF_VIRTIO_BLOCK";
+                    serviceName = "HDF_PLATFORM_MMC_0";
+                    deviceMatchAttr = "qemu_virt_blk_0";
+                }
+            }
+        }
+        media :: host {
+        }
+        input :: host {
+            hostName = "input_host";
+            priority = 100;
+            device_input_manager :: device {
+                device0 :: deviceNode {
+                    policy = 2;
+                    priority = 100;
+                    preload = 0;
+                    permission = 0660;
+                    moduleName = "HDF_INPUT_MANAGER";
+                    serviceName = "input_dev_manager";
+                    deviceMatchAttr = "";
+                }
+            }
+            device_hdf_hid :: device {
+                device0 :: deviceNode {
+                    policy = 2;
+                    priority = 140;
+                    preload = 0;
+                    permission = 0660;
+                    moduleName = "HDF_HID";
+                    serviceName = "event2";
+                }
+            }
+            virt_mouse :: device {
+                virt_mouse0 :: deviceNode {
+                    policy = 0;
+                    priority = 130;
+                    preload = 0;
+                    permission = 0660;
+                    moduleName = "HDF_VIRTIO_MOUSE";
+                    serviceName = "hdf_virtio_mouse";
+                    deviceMatchAttr = "";
+                }
+            }
+        }
+        dsoftbus :: host {
+            hostName = "dsoftbus_host";
+            device_dsoftbus :: device {
+                device0 :: deviceNode {
+                    policy = 2;
+                    priority = 100;
+                    preload = 0;
+                    permission = 0664;
+                    moduleName = "HDF_DSOFTBUS";
+                    serviceName = "hdf_dsoftbus";
+                }
+            }
+        }
+    }
+}

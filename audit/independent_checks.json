@@ -1,0 +1,294 @@
+{
+  "passed": true,
+  "checks": {
+    "row_count": true,
+    "test_is_exact_journal_subset": true,
+    "recomputed_scores": true,
+    "protocol_hash": true,
+    "study_image_hash": true,
+    "study_archived_sources": true,
+    "deployment_image_hash": true,
+    "deployment_archived_sources": true,
+    "memory_integrity": true,
+    "test_cells": true,
+    "seed_partitions": true,
+    "raw_record_multiplicity": true,
+    "compressed_raw_hashes": true,
+    "independent_paired_intervals": true,
+    "equal_candidate_budgets": true,
+    "trace_matches_measurements": true
+  },
+  "details": {
+    "stage_counts": {
+      "pilot_train": 60,
+      "train": 1920,
+      "validation_default": 222,
+      "validation": 222,
+      "pilot_test": 120,
+      "test": 600
+    },
+    "same_global_parameters": {
+      "S": {
+        "random": [
+          1000,
+          500
+        ],
+        "bo": [
+          1000,
+          500
+        ]
+      },
+      "M": {
+        "random": [
+          16,
+          32
+        ],
+        "bo": [
+          16,
+          32
+        ]
+      }
+    },
+    "one_shot_inner_elapsed_cost": [
+      {
+        "kind": "S",
+        "context": [
+          2,
+          1
+        ],
+        "mean_pilot_plus_actual_elapsed_ratio": 2.1576144073032415
+      },
+      {
+        "kind": "S",
+        "context": [
+          6,
+          3
+        ],
+        "mean_pilot_plus_actual_elapsed_ratio": 1.9225793707619188
+      },
+      {
+        "kind": "S",
+        "context": [
+          8,
+          8
+        ],
+        "mean_pilot_plus_actual_elapsed_ratio": 2.029816910356475
+      },
+      {
+        "kind": "S",
+        "context": [
+          10,
+          6
+        ],
+        "mean_pilot_plus_actual_elapsed_ratio": 2.0778137079294847
+      },
+      {
+        "kind": "S",
+        "context": [
+          16,
+          10
+        ],
+        "mean_pilot_plus_actual_elapsed_ratio": 1.9899026007447098
+      },
+      {
+        "kind": "S",
+        "context": [
+          18,
+          8
+        ],
+        "mean_pilot_plus_actual_elapsed_ratio": 1.938525273317726
+      },
+      {
+        "kind": "M",
+        "context": [
+          2000,
+          0
+        ],
+        "mean_pilot_plus_actual_elapsed_ratio": 2.001426696625133
+      },
+      {
+        "kind": "M",
+        "context": [
+          4000,
+          1
+        ],
+        "mean_pilot_plus_actual_elapsed_ratio": 1.9617530143280855
+      },
+      {
+        "kind": "M",
+        "context": [
+          4000,
+          2
+        ],
+        "mean_pilot_plus_actual_elapsed_ratio": 2.1529598003230093
+      },
+      {
+        "kind": "M",
+        "context": [
+          6000,
+          0
+        ],
+        "mean_pilot_plus_actual_elapsed_ratio": 2.000207368992756
+      },
+      {
+        "kind": "M",
+        "context": [
+          6000,
+          1
+        ],
+        "mean_pilot_plus_actual_elapsed_ratio": 1.99740886641883
+      },
+      {
+        "kind": "M",
+        "context": [
+          6000,
+          3
+        ],
+        "mean_pilot_plus_actual_elapsed_ratio": 1.980860620049153
+      }
+    ],
+    "memory_cells_with_different_request_streams": [
+      {
+        "context": [
+          4000,
+          2
+        ],
+        "rep": 0
+      },
+      {
+        "context": [
+          4000,
+          2
+        ],
+        "rep": 1
+      },
+      {
+        "context": [
+          4000,
+          2
+        ],
+        "rep": 2
+      },
+      {
+        "context": [
+          4000,
+          2
+        ],
+        "rep": 3
+      },
+      {
+        "context": [
+          4000,
+          2
+        ],
+        "rep": 4
+      },
+      {
+        "context": [
+          4000,
+          2
+        ],
+        "rep": 5
+      },
+      {
+        "context": [
+          4000,
+          2
+        ],
+        "rep": 6
+      },
+      {
+        "context": [
+          4000,
+          2
+        ],
+        "rep": 7
+      },
+      {
+        "context": [
+          4000,
+          2
+        ],
+        "rep": 8
+      },
+      {
+        "context": [
+          4000,
+          2
+        ],
+        "rep": 9
+      },
+      {
+        "context": [
+          6000,
+          3
+        ],
+        "rep": 0
+      },
+      {
+        "context": [
+          6000,
+          3
+        ],
+        "rep": 1
+      },
+      {
+        "context": [
+          6000,
+          3
+        ],
+        "rep": 2
+      },
+      {
+        "context": [
+          6000,
+          3
+        ],
+        "rep": 3
+      },
+      {
+        "context": [
+          6000,
+          3
+        ],
+        "rep": 4
+      },
+      {
+        "context": [
+          6000,
+          3
+        ],
+        "rep": 5
+      },
+      {
+        "context": [
+          6000,
+          3
+        ],
+        "rep": 6
+      },
+      {
+        "context": [
+          6000,
+          3
+        ],
+        "rep": 7
+      },
+      {
+        "context": [
+          6000,
+          3
+        ],
+        "rep": 8
+      },
+      {
+        "context": [
+          6000,
+          3
+        ],
+        "rep": 9
+      }
+    ]
+  },
+  "scope": "Data integrity and arithmetic only; scientific limitations are in docs/AUDIT.md."
+}

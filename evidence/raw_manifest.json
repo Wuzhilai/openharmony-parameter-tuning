@@ -1,0 +1,27 @@
+[
+  {
+    "file": "evidence/main_study_final.serial.log.gz",
+    "uncompressed_sha256": "55365da1a6b48a4dfad727f5cfdd5ffe08603ad8155efe3b16ede46719d8bb1d",
+    "uncompressed_bytes": 215113404
+  },
+  {
+    "file": "evidence/deployed_model_final.serial.log.gz",
+    "uncompressed_sha256": "d357c53d8bff987bec6873f399449cd7f6f9b6f23e006c7403699f98b9aee70d",
+    "uncompressed_bytes": 35249039
+  },
+  {
+    "file": "evidence/supplementary.serial.log.gz",
+    "uncompressed_sha256": "1c2e8c6c3afc6ac93fb683990185b345611c9d96036d389919a903145f5158da",
+    "uncompressed_bytes": 5398050
+  },
+  {
+    "file": "evidence/forced_restart_before.serial.log.gz",
+    "uncompressed_sha256": "ce02ca8a8f731d9a996d6cb8c4499f203605668833cfd7ead4adb3f9a213e92a",
+    "uncompressed_bytes": 256
+  },
+  {
+    "file": "evidence/forced_restart_after.serial.log.gz",
+    "uncompressed_sha256": "3a560d0af81c6139a433b544e4c08ab31e7c2eafb0f009e22a3a2bb76e0b3bb9",
+    "uncompressed_bytes": 754
+  }
+]

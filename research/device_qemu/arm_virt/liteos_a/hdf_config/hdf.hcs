@@ -1,0 +1,8 @@
+#include "device_info/device_info.hcs"
+#include "uart/uart_config.hcs"
+#include "sdio/sdio_config.hcs"
+#include "wifi/wlan_platform.hcs"
+#include "mmc/mmc_config.hcs"
+root {
+    module = "qemu,arm_virt_chip";
+}

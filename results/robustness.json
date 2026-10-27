@@ -1,0 +1,109 @@
+{
+  "rejections": [
+    {
+      "command": "X 1 2 3 4 5 1",
+      "response": [
+        "MID_ERROR unknown_kind",
+        "MID_READY protocol=1"
+      ]
+    },
+    {
+      "command": "S 1 1 2 1000 50 1",
+      "response": [
+        "MID_ERROR invalid_sched",
+        "MID_READY protocol=1"
+      ]
+    },
+    {
+      "command": "M 1 1000 4 8 0 1",
+      "response": [
+        "MID_ERROR invalid_memory",
+        "MID_READY protocol=1"
+      ]
+    },
+    {
+      "command": "A 1 30 2 123 0 1",
+      "response": [
+        "MID_ERROR invalid_automatic",
+        "MID_READY protocol=1"
+      ]
+    },
+    {
+      "command": "B 1 1000 8 123 0 1",
+      "response": [
+        "MID_ERROR invalid_automatic",
+        "MID_READY protocol=1"
+      ]
+    },
+    {
+      "command": "garbage",
+      "response": [
+        "MID_ERROR invalid_command",
+        "MID_READY protocol=1"
+      ]
+    }
+  ],
+  "recovered": {
+    "seed": 93000,
+    "ops": 1000,
+    "mode": 0,
+    "minalloc": 8,
+    "split": 0,
+    "probes": 1,
+    "elapsed": 4359,
+    "probe_cycles": 36,
+    "allocs": 568,
+    "requested": 13902,
+    "fails": 0,
+    "corrupt": 0,
+    "sampled_peak": 36,
+    "live_used": 5036,
+    "free": 125084,
+    "maxfree": 124944,
+    "free_nodes": 4,
+    "integrity": 0,
+    "restored_used": 0,
+    "deinit": 0,
+    "host_seconds": 0.006049603999997544
+  },
+  "forced_guest_restart": {
+    "scheduler": {
+      "seed": 94000,
+      "n": 8,
+      "scale": 5,
+      "q": 20000,
+      "floor": 50,
+      "probes": 1,
+      "mean_turn": 430860,
+      "p95_response": 609112,
+      "elapsed": 730164,
+      "switches": 23,
+      "spread": 586429,
+      "host_seconds": 0.039075822000000926
+    },
+    "memory": {
+      "seed": 94000,
+      "ops": 2000,
+      "mode": 1,
+      "minalloc": 8,
+      "split": 0,
+      "probes": 1,
+      "elapsed": 10130,
+      "probe_cycles": 342,
+      "allocs": 1063,
+      "requested": 270079,
+      "fails": 0,
+      "corrupt": 0,
+      "sampled_peak": 32868,
+      "live_used": 33184,
+      "free": 96936,
+      "maxfree": 86180,
+      "free_nodes": 48,
+      "integrity": 0,
+      "restored_used": 0,
+      "deinit": 0,
+      "host_seconds": 0.008116522000008786
+    }
+  },
+  "scope": "Parameter boundary rejection, transport recovery and isolated process restart. Not kernel fault injection or production safety certification."
+}

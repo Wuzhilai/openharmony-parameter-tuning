@@ -1,0 +1,1682 @@
+[
+  {
+    "kind": "S",
+    "context": [
+      2,
+      1
+    ],
+    "rep": 0,
+    "method": "random",
+    "param": [
+      20000,
+      50
+    ],
+    "training_score": 61138.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      2,
+      1
+    ],
+    "rep": 0,
+    "method": "bo",
+    "param": [
+      20000,
+      50
+    ],
+    "training_score": 61138.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      2,
+      1
+    ],
+    "rep": 1,
+    "method": "random",
+    "param": [
+      20000,
+      50
+    ],
+    "training_score": 39275.25
+  },
+  {
+    "kind": "S",
+    "context": [
+      2,
+      1
+    ],
+    "rep": 1,
+    "method": "bo",
+    "param": [
+      20000,
+      50
+    ],
+    "training_score": 39275.25
+  },
+  {
+    "kind": "S",
+    "context": [
+      2,
+      1
+    ],
+    "rep": 2,
+    "method": "random",
+    "param": [
+      20000,
+      50
+    ],
+    "training_score": 25677.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      2,
+      1
+    ],
+    "rep": 2,
+    "method": "bo",
+    "param": [
+      20000,
+      50
+    ],
+    "training_score": 25677.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      2,
+      1
+    ],
+    "rep": 3,
+    "method": "random",
+    "param": [
+      1000,
+      200
+    ],
+    "training_score": 37834.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      2,
+      1
+    ],
+    "rep": 3,
+    "method": "bo",
+    "param": [
+      20000,
+      50
+    ],
+    "training_score": 37840.75
+  },
+  {
+    "kind": "S",
+    "context": [
+      2,
+      1
+    ],
+    "rep": 4,
+    "method": "random",
+    "param": [
+      20000,
+      50
+    ],
+    "training_score": 44184.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      2,
+      1
+    ],
+    "rep": 4,
+    "method": "bo",
+    "param": [
+      20000,
+      50
+    ],
+    "training_score": 44184.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      4,
+      4
+    ],
+    "rep": 0,
+    "method": "random",
+    "param": [
+      20000,
+      50
+    ],
+    "training_score": 408072.75
+  },
+  {
+    "kind": "S",
+    "context": [
+      4,
+      4
+    ],
+    "rep": 0,
+    "method": "bo",
+    "param": [
+      1000,
+      500
+    ],
+    "training_score": 383849.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      4,
+      4
+    ],
+    "rep": 1,
+    "method": "random",
+    "param": [
+      2000,
+      50
+    ],
+    "training_score": 302781.25
+  },
+  {
+    "kind": "S",
+    "context": [
+      4,
+      4
+    ],
+    "rep": 1,
+    "method": "bo",
+    "param": [
+      20000,
+      50
+    ],
+    "training_score": 324243.25
+  },
+  {
+    "kind": "S",
+    "context": [
+      4,
+      4
+    ],
+    "rep": 2,
+    "method": "random",
+    "param": [
+      1000,
+      500
+    ],
+    "training_score": 211545.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      4,
+      4
+    ],
+    "rep": 2,
+    "method": "bo",
+    "param": [
+      1000,
+      500
+    ],
+    "training_score": 211545.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      4,
+      4
+    ],
+    "rep": 3,
+    "method": "random",
+    "param": [
+      1000,
+      200
+    ],
+    "training_score": 282783.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      4,
+      4
+    ],
+    "rep": 3,
+    "method": "bo",
+    "param": [
+      1000,
+      200
+    ],
+    "training_score": 282783.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      4,
+      4
+    ],
+    "rep": 4,
+    "method": "random",
+    "param": [
+      2000,
+      200
+    ],
+    "training_score": 333576.75
+  },
+  {
+    "kind": "S",
+    "context": [
+      4,
+      4
+    ],
+    "rep": 4,
+    "method": "bo",
+    "param": [
+      1000,
+      500
+    ],
+    "training_score": 313663.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      8,
+      2
+    ],
+    "rep": 0,
+    "method": "random",
+    "param": [
+      20000,
+      50
+    ],
+    "training_score": 352945.75
+  },
+  {
+    "kind": "S",
+    "context": [
+      8,
+      2
+    ],
+    "rep": 0,
+    "method": "bo",
+    "param": [
+      20000,
+      200
+    ],
+    "training_score": 352945.75
+  },
+  {
+    "kind": "S",
+    "context": [
+      8,
+      2
+    ],
+    "rep": 1,
+    "method": "random",
+    "param": [
+      20000,
+      50
+    ],
+    "training_score": 355716.75
+  },
+  {
+    "kind": "S",
+    "context": [
+      8,
+      2
+    ],
+    "rep": 1,
+    "method": "bo",
+    "param": [
+      10000,
+      200
+    ],
+    "training_score": 355716.75
+  },
+  {
+    "kind": "S",
+    "context": [
+      8,
+      2
+    ],
+    "rep": 2,
+    "method": "random",
+    "param": [
+      20000,
+      50
+    ],
+    "training_score": 245296.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      8,
+      2
+    ],
+    "rep": 2,
+    "method": "bo",
+    "param": [
+      20000,
+      50
+    ],
+    "training_score": 245296.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      8,
+      2
+    ],
+    "rep": 3,
+    "method": "random",
+    "param": [
+      20000,
+      50
+    ],
+    "training_score": 323741.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      8,
+      2
+    ],
+    "rep": 3,
+    "method": "bo",
+    "param": [
+      40000,
+      50
+    ],
+    "training_score": 323741.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      8,
+      2
+    ],
+    "rep": 4,
+    "method": "random",
+    "param": [
+      20000,
+      50
+    ],
+    "training_score": 354145.25
+  },
+  {
+    "kind": "S",
+    "context": [
+      8,
+      2
+    ],
+    "rep": 4,
+    "method": "bo",
+    "param": [
+      20000,
+      50
+    ],
+    "training_score": 354145.25
+  },
+  {
+    "kind": "S",
+    "context": [
+      8,
+      8
+    ],
+    "rep": 0,
+    "method": "random",
+    "param": [
+      2000,
+      200
+    ],
+    "training_score": 1220371.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      8,
+      8
+    ],
+    "rep": 0,
+    "method": "bo",
+    "param": [
+      1000,
+      500
+    ],
+    "training_score": 1122567.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      8,
+      8
+    ],
+    "rep": 1,
+    "method": "random",
+    "param": [
+      2000,
+      50
+    ],
+    "training_score": 1372445.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      8,
+      8
+    ],
+    "rep": 1,
+    "method": "bo",
+    "param": [
+      1000,
+      500
+    ],
+    "training_score": 1302617.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      8,
+      8
+    ],
+    "rep": 2,
+    "method": "random",
+    "param": [
+      1000,
+      500
+    ],
+    "training_score": 903439.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      8,
+      8
+    ],
+    "rep": 2,
+    "method": "bo",
+    "param": [
+      1000,
+      500
+    ],
+    "training_score": 903439.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      8,
+      8
+    ],
+    "rep": 3,
+    "method": "random",
+    "param": [
+      1000,
+      200
+    ],
+    "training_score": 1113553.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      8,
+      8
+    ],
+    "rep": 3,
+    "method": "bo",
+    "param": [
+      1000,
+      200
+    ],
+    "training_score": 1113553.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      8,
+      8
+    ],
+    "rep": 4,
+    "method": "random",
+    "param": [
+      2000,
+      50
+    ],
+    "training_score": 1302068.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      8,
+      8
+    ],
+    "rep": 4,
+    "method": "bo",
+    "param": [
+      1000,
+      500
+    ],
+    "training_score": 1221658.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      12,
+      4
+    ],
+    "rep": 0,
+    "method": "random",
+    "param": [
+      2000,
+      200
+    ],
+    "training_score": 1026261.75
+  },
+  {
+    "kind": "S",
+    "context": [
+      12,
+      4
+    ],
+    "rep": 0,
+    "method": "bo",
+    "param": [
+      1000,
+      500
+    ],
+    "training_score": 951919.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      12,
+      4
+    ],
+    "rep": 1,
+    "method": "random",
+    "param": [
+      2000,
+      50
+    ],
+    "training_score": 1009453.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      12,
+      4
+    ],
+    "rep": 1,
+    "method": "bo",
+    "param": [
+      20000,
+      50
+    ],
+    "training_score": 1063149.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      12,
+      4
+    ],
+    "rep": 2,
+    "method": "random",
+    "param": [
+      1000,
+      500
+    ],
+    "training_score": 739312.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      12,
+      4
+    ],
+    "rep": 2,
+    "method": "bo",
+    "param": [
+      1000,
+      500
+    ],
+    "training_score": 739312.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      12,
+      4
+    ],
+    "rep": 3,
+    "method": "random",
+    "param": [
+      1000,
+      200
+    ],
+    "training_score": 887501.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      12,
+      4
+    ],
+    "rep": 3,
+    "method": "bo",
+    "param": [
+      1000,
+      200
+    ],
+    "training_score": 887501.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      12,
+      4
+    ],
+    "rep": 4,
+    "method": "random",
+    "param": [
+      2000,
+      50
+    ],
+    "training_score": 1053677.25
+  },
+  {
+    "kind": "S",
+    "context": [
+      12,
+      4
+    ],
+    "rep": 4,
+    "method": "bo",
+    "param": [
+      1000,
+      500
+    ],
+    "training_score": 984954.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      16,
+      10
+    ],
+    "rep": 0,
+    "method": "random",
+    "param": [
+      2000,
+      200
+    ],
+    "training_score": 2970385.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      16,
+      10
+    ],
+    "rep": 0,
+    "method": "bo",
+    "param": [
+      1000,
+      500
+    ],
+    "training_score": 2751184.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      16,
+      10
+    ],
+    "rep": 1,
+    "method": "random",
+    "param": [
+      2000,
+      50
+    ],
+    "training_score": 2986263.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      16,
+      10
+    ],
+    "rep": 1,
+    "method": "bo",
+    "param": [
+      1000,
+      500
+    ],
+    "training_score": 2811004.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      16,
+      10
+    ],
+    "rep": 2,
+    "method": "random",
+    "param": [
+      1000,
+      500
+    ],
+    "training_score": 2431451.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      16,
+      10
+    ],
+    "rep": 2,
+    "method": "bo",
+    "param": [
+      1000,
+      500
+    ],
+    "training_score": 2431451.0
+  },
+  {
+    "kind": "S",
+    "context": [
+      16,
+      10
+    ],
+    "rep": 3,
+    "method": "random",
+    "param": [
+      1000,
+      50
+    ],
+    "training_score": 2949106.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      16,
+      10
+    ],
+    "rep": 3,
+    "method": "bo",
+    "param": [
+      1000,
+      50
+    ],
+    "training_score": 2949106.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      16,
+      10
+    ],
+    "rep": 4,
+    "method": "random",
+    "param": [
+      2000,
+      50
+    ],
+    "training_score": 3131411.5
+  },
+  {
+    "kind": "S",
+    "context": [
+      16,
+      10
+    ],
+    "rep": 4,
+    "method": "bo",
+    "param": [
+      1000,
+      500
+    ],
+    "training_score": 2974384.0
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      0
+    ],
+    "rep": 0,
+    "method": "random",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 5.1876
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      0
+    ],
+    "rep": 0,
+    "method": "bo",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 5.1876
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      0
+    ],
+    "rep": 1,
+    "method": "random",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 5.1618
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      0
+    ],
+    "rep": 1,
+    "method": "bo",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 5.1618
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      0
+    ],
+    "rep": 2,
+    "method": "random",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 5.16965
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      0
+    ],
+    "rep": 2,
+    "method": "bo",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 5.16965
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      0
+    ],
+    "rep": 3,
+    "method": "random",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 5.13825
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      0
+    ],
+    "rep": 3,
+    "method": "bo",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 5.13825
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      0
+    ],
+    "rep": 4,
+    "method": "random",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 5.2921
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      0
+    ],
+    "rep": 4,
+    "method": "bo",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 5.2921
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      0
+    ],
+    "rep": 0,
+    "method": "random",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 5.08825
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      0
+    ],
+    "rep": 0,
+    "method": "bo",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 5.08825
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      0
+    ],
+    "rep": 1,
+    "method": "random",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 5.136175
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      0
+    ],
+    "rep": 1,
+    "method": "bo",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 5.136175
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      0
+    ],
+    "rep": 2,
+    "method": "random",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 5.23155
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      0
+    ],
+    "rep": 2,
+    "method": "bo",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 5.23155
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      0
+    ],
+    "rep": 3,
+    "method": "random",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 5.167949999999999
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      0
+    ],
+    "rep": 3,
+    "method": "bo",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 5.167949999999999
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      0
+    ],
+    "rep": 4,
+    "method": "random",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 5.115375
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      0
+    ],
+    "rep": 4,
+    "method": "bo",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 5.115375
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      1
+    ],
+    "rep": 0,
+    "method": "random",
+    "param": [
+      16,
+      0
+    ],
+    "training_score": 11.98835
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      1
+    ],
+    "rep": 0,
+    "method": "bo",
+    "param": [
+      16,
+      0
+    ],
+    "training_score": 11.98835
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      1
+    ],
+    "rep": 1,
+    "method": "random",
+    "param": [
+      16,
+      32
+    ],
+    "training_score": 11.6387
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      1
+    ],
+    "rep": 1,
+    "method": "bo",
+    "param": [
+      16,
+      32
+    ],
+    "training_score": 11.6387
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      1
+    ],
+    "rep": 2,
+    "method": "random",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 11.197600000000001
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      1
+    ],
+    "rep": 2,
+    "method": "bo",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 11.197600000000001
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      1
+    ],
+    "rep": 3,
+    "method": "random",
+    "param": [
+      8,
+      16
+    ],
+    "training_score": 11.724250000000001
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      1
+    ],
+    "rep": 3,
+    "method": "bo",
+    "param": [
+      8,
+      16
+    ],
+    "training_score": 11.724250000000001
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      1
+    ],
+    "rep": 4,
+    "method": "random",
+    "param": [
+      8,
+      16
+    ],
+    "training_score": 12.4036
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      1
+    ],
+    "rep": 4,
+    "method": "bo",
+    "param": [
+      16,
+      16
+    ],
+    "training_score": 12.3733
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      1
+    ],
+    "rep": 0,
+    "method": "random",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 11.208225
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      1
+    ],
+    "rep": 0,
+    "method": "bo",
+    "param": [
+      8,
+      32
+    ],
+    "training_score": 11.117550000000001
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      1
+    ],
+    "rep": 1,
+    "method": "random",
+    "param": [
+      32,
+      16
+    ],
+    "training_score": 11.694975
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      1
+    ],
+    "rep": 1,
+    "method": "bo",
+    "param": [
+      32,
+      32
+    ],
+    "training_score": 11.668800000000001
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      1
+    ],
+    "rep": 2,
+    "method": "random",
+    "param": [
+      32,
+      32
+    ],
+    "training_score": 12.560950000000002
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      1
+    ],
+    "rep": 2,
+    "method": "bo",
+    "param": [
+      8,
+      16
+    ],
+    "training_score": 12.520275
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      1
+    ],
+    "rep": 3,
+    "method": "random",
+    "param": [
+      16,
+      16
+    ],
+    "training_score": 11.886500000000002
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      1
+    ],
+    "rep": 3,
+    "method": "bo",
+    "param": [
+      8,
+      16
+    ],
+    "training_score": 11.913325
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      1
+    ],
+    "rep": 4,
+    "method": "random",
+    "param": [
+      8,
+      16
+    ],
+    "training_score": 11.563375
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      1
+    ],
+    "rep": 4,
+    "method": "bo",
+    "param": [
+      32,
+      32
+    ],
+    "training_score": 11.586175
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      2
+    ],
+    "rep": 0,
+    "method": "random",
+    "param": [
+      16,
+      0
+    ],
+    "training_score": 657.4727285358583
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      2
+    ],
+    "rep": 0,
+    "method": "bo",
+    "param": [
+      16,
+      64
+    ],
+    "training_score": 682.2068616803047
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      2
+    ],
+    "rep": 1,
+    "method": "random",
+    "param": [
+      16,
+      64
+    ],
+    "training_score": 610.9318320400314
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      2
+    ],
+    "rep": 1,
+    "method": "bo",
+    "param": [
+      64,
+      16
+    ],
+    "training_score": 587.9399739228409
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      2
+    ],
+    "rep": 2,
+    "method": "random",
+    "param": [
+      32,
+      128
+    ],
+    "training_score": 498.4607057892887
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      2
+    ],
+    "rep": 2,
+    "method": "bo",
+    "param": [
+      16,
+      32
+    ],
+    "training_score": 513.6639841872025
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      2
+    ],
+    "rep": 3,
+    "method": "random",
+    "param": [
+      8,
+      32
+    ],
+    "training_score": 569.7520648881294
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      2
+    ],
+    "rep": 3,
+    "method": "bo",
+    "param": [
+      8,
+      0
+    ],
+    "training_score": 607.4858793060416
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      2
+    ],
+    "rep": 4,
+    "method": "random",
+    "param": [
+      64,
+      0
+    ],
+    "training_score": 565.4904316803137
+  },
+  {
+    "kind": "M",
+    "context": [
+      2000,
+      2
+    ],
+    "rep": 4,
+    "method": "bo",
+    "param": [
+      32,
+      128
+    ],
+    "training_score": 577.7299342135283
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      2
+    ],
+    "rep": 0,
+    "method": "random",
+    "param": [
+      16,
+      0
+    ],
+    "training_score": 663.6541026659959
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      2
+    ],
+    "rep": 0,
+    "method": "bo",
+    "param": [
+      32,
+      64
+    ],
+    "training_score": 713.7675493650853
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      2
+    ],
+    "rep": 1,
+    "method": "random",
+    "param": [
+      32,
+      0
+    ],
+    "training_score": 637.9111982708467
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      2
+    ],
+    "rep": 1,
+    "method": "bo",
+    "param": [
+      8,
+      32
+    ],
+    "training_score": 700.3781432117206
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      2
+    ],
+    "rep": 2,
+    "method": "random",
+    "param": [
+      32,
+      32
+    ],
+    "training_score": 614.2165191000918
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      2
+    ],
+    "rep": 2,
+    "method": "bo",
+    "param": [
+      8,
+      16
+    ],
+    "training_score": 615.0830784538834
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      2
+    ],
+    "rep": 3,
+    "method": "random",
+    "param": [
+      8,
+      32
+    ],
+    "training_score": 636.9776310001346
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      2
+    ],
+    "rep": 3,
+    "method": "bo",
+    "param": [
+      64,
+      64
+    ],
+    "training_score": 635.0369997859723
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      2
+    ],
+    "rep": 4,
+    "method": "random",
+    "param": [
+      64,
+      0
+    ],
+    "training_score": 622.3795168449553
+  },
+  {
+    "kind": "M",
+    "context": [
+      4000,
+      2
+    ],
+    "rep": 4,
+    "method": "bo",
+    "param": [
+      32,
+      64
+    ],
+    "training_score": 644.557281279778
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "platform": "actual OpenHarmony LiteOS-M kernel on QEMU mps2-an386, instruction-counted virtual time",
+  "scope": ["actual same-priority task scheduler", "actual TLSF dynamic memory allocator"],
+  "scheduler": {
+    "space": {"quantum_us": [1000, 2000, 5000, 10000, 20000, 40000], "minimum_us": [50, 200, 500]},
+    "default": [20000, 50],
+    "objective": "mean_turn + 0.5*p95_response, guest timer cycles; lower is better",
+    "train_contexts": [[2, 1], [4, 4], [8, 2], [8, 8], [12, 4], [16, 10]],
+    "validation_contexts": [[6, 5], [14, 7]],
+    "test_contexts": [[2, 1], [8, 8], [16, 10], [6, 3], [10, 6], [18, 8]]
+  },
+  "memory": {
+    "space": {"minimum_allocation_bytes": [8, 16, 32, 64], "split_extra_bytes": [0, 16, 32, 64, 128]},
+    "default": [8, 0],
+    "objective": "(elapsed-probe_cycles)/ops + 0.0002*live_used + 5000*fails/allocs; lower is better",
+    "train_contexts": [[2000, 0], [4000, 0], [2000, 1], [4000, 1], [2000, 2], [4000, 2]],
+    "validation_contexts": [[3000, 1], [3000, 2]],
+    "test_contexts": [[2000, 0], [4000, 1], [4000, 2], [6000, 0], [6000, 1], [6000, 3]]
+  },
+  "training": {"repetitions": 5, "budget": 8, "evaluation_seeds_per_candidate": 2, "common_initial_points": 3, "methods": ["random", "bo"]},
+  "testing": {"repetitions": 10, "methods": ["default", "heuristic", "random", "bo", "context"], "paired_seeds": true},
+  "context_features": "a separate pilot run on default parameters; no held-out test measurements used to select parameters",
+  "probe_stride": 1024,
+  "notes": "Protocol fixed before main data collection. Unseen test contexts include both input interpolation and memory mode3 shift. QEMU cannot establish physical hardware latency, power or thermal gains. Simulator measurements in the old deliverable remain separate."
+}

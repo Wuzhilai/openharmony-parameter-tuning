@@ -1,0 +1,62 @@
+--- a/kernel/src/los_sched.c
++++ b/kernel/src/los_sched.c
+@@ -61,6 +61,8 @@
+ STATIC UINT16 g_tickIntLock = 0;
+ STATIC UINT64 g_schedResponseTime = OS_SCHED_MAX_RESPONSE_TIME;
+ 
++volatile UINT32 g_midProbeEnabled = 1;
++volatile UINT32 g_midSwitches = 0;
+ STATIC INT32 g_schedTimeSlice;
+ STATIC INT32 g_schedTimeSliceMin;
+ STATIC UINT32 g_schedTickMinPeriod;
+@@ -542,6 +544,7 @@
+         newTask->taskStatus |= OS_TASK_STATUS_RUNNING;
+         newTask->startTime = runTask->startTime;
+         isTaskSwitch = TRUE;
++        if (g_midProbeEnabled) { g_midSwitches++; }
+ 
+         OsHookCall(LOS_HOOK_TYPE_TASK_SWITCHEDIN);
+ #if (LOSCFG_DEBUG_TOOLS == 1)
+@@ -622,3 +625,14 @@
+         ArchTaskSchedule();
+     }
+ }
++
++/* Research-only control API. Invoked between workloads while no worker exists. */
++UINT32 MidSetSched(UINT32 quantumUs, UINT32 minimumUs)
++{
++    if (quantumUs < 1000 || quantumUs > 40000 || minimumUs < 50 || minimumUs > 500 || minimumUs >= quantumUs) return LOS_NOK;
++    UINT32 state = LOS_IntLock();
++    g_schedTimeSlice = (INT32)(((UINT64)g_sysClock * quantumUs) / OS_SYS_US_PER_SECOND);
++    g_schedTimeSliceMin = (INT32)(((UINT64)g_sysClock * minimumUs) / OS_SYS_US_PER_SECOND);
++    LOS_IntRestore(state);
++    return LOS_OK;
++}
+--- a/kernel/src/mm/los_memory.c
++++ b/kernel/src/mm/los_memory.c
+@@ -197,8 +197,10 @@
+ #define OS_MEM_IS_ALIGNED(a, b)     (!(((UINTPTR)(a)) & (((UINTPTR)(b)) - 1)))
+ #define OS_MEM_NODE_HEAD_SIZE       sizeof(struct OsMemUsedNodeHead)
+ #define OS_MEM_MIN_POOL_SIZE        (OS_MEM_NODE_HEAD_SIZE + sizeof(struct OsMemPoolHead))
+-#define OS_MEM_MIN_LEFT_SIZE        sizeof(struct OsMemFreeNodeHead)
+-#define OS_MEM_MIN_ALLOC_SIZE       8
++static UINT32 g_midSplitExtra = 0;
++static UINT32 g_midMinAlloc = 8;
++#define OS_MEM_MIN_LEFT_SIZE (sizeof(struct OsMemFreeNodeHead) + g_midSplitExtra)
++#define OS_MEM_MIN_ALLOC_SIZE g_midMinAlloc
+ #define OS_MEM_NEXT_NODE(node) \
+     ((struct OsMemNodeHead *)(VOID *)((UINT8 *)(node) + OS_MEM_NODE_GET_SIZE((node)->sizeAndFlag)))
+ #define OS_MEM_FIRST_NODE(pool) \
+@@ -2309,3 +2311,12 @@
+     return count;
+ }
+ #endif
++
++/* Defaults preserve the upstream split threshold and minimum allocation. */
++UINT32 MidSetMemory(UINT32 minAlloc, UINT32 splitExtra)
++{
++    if ((minAlloc != 8 && minAlloc != 16 && minAlloc != 32 && minAlloc != 64) || splitExtra > 128 || (splitExtra & 3)) return LOS_NOK;
++    UINT32 state = LOS_IntLock();
++    g_midMinAlloc = minAlloc; g_midSplitExtra = splitExtra;
++    LOS_IntRestore(state); return LOS_OK;
++}

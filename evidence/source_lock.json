@@ -1,0 +1,26 @@
+{
+  "bounds_checking_function": {
+    "commit": "61baa7a3eb9347efca58397d1d0504faa96d79f0",
+    "remote": "https://github.com/openharmony/third_party_bounds_checking_function.git"
+  },
+  "cmsis": {
+    "commit": "22eba97725ef919017fcce23fc1671dd75faec63",
+    "remote": "https://github.com/openharmony/third_party_cmsis.git"
+  },
+  "device_qemu": {
+    "commit": "434e755fdb46ea93df016b56eb4f3033823d36d4",
+    "remote": "https://github.com/openharmony/device_qemu.git"
+  },
+  "kernel_liteos_a": {
+    "commit": "4ac7f3aed67000b47bc14d6fe79d63ada708d780",
+    "remote": "https://github.com/openharmony/kernel_liteos_a.git"
+  },
+  "kernel_liteos_m": {
+    "commit": "bca80e0bc4b4925ac3c14819bcf3ba7ae04c590c",
+    "remote": "https://github.com/openharmony/kernel_liteos_m.git"
+  },
+  "vendor_ohemu": {
+    "commit": "7e21e37d5310c0e45ab12548da8241fe8c536e30",
+    "remote": "https://github.com/openharmony/vendor_ohemu.git"
+  }
+}
